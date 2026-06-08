@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-  "build": "webpack"
-  },
+"scripts": {
+  "build": "webpack",
+  "start": "webpack serve"
+},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ChristopherJazz/Project-Restaurant-Page.git"
@@ -13,13 +14,14 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
+
   "bugs": {
     "url": "https://github.com/ChristopherJazz/Project-Restaurant-Page/issues"
   },
   "homepage": "https://github.com/ChristopherJazz/Project-Restaurant-Page#readme",
   "devDependencies": {
     "webpack": "^5.107.2",
-    "webpack-cli": "^7.0.3"
+    "webpack-cli": "^7.0.3",
+    "webpack-dev-server": "^5.2.4"
   }
 }

@@ -1,1 +1,3 @@
-console.log("Webpack is working!");
+import { greet } from "./greeting";
+
+console.log(greet("Jazz"));
