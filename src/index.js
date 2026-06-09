@@ -1,3 +1,3 @@
-import { greet } from "./greeting";
+import { loadHome } from "./home";
 
-console.log(greet("Jazz"));
+loadHome();
