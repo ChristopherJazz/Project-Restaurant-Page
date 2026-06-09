@@ -1,5 +1,12 @@
 body {
   font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+#content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
 }
 
 header {
@@ -10,8 +17,15 @@ nav {
   display: flex;
   justify-content: center;
   gap: 1rem;
+  margin-bottom: 2rem;
 }
 
 button {
   padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+main {
+  border: 1px solid #ddd;
+  padding: 2rem;
 }

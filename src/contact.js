@@ -1,7 +1,7 @@
-export function loadContact() {
-  const main = document.getElementById("main-content");
+import { clearMain } from "./dom";
 
-  main.textContent = "";
+export function loadContact() {
+  const main = clearMain();
 
   const heading = document.createElement("h2");
   heading.textContent = "Contact";

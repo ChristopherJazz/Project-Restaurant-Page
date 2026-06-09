@@ -1,7 +1,7 @@
-export function loadHome() {
-  const main = document.getElementById("main-content");
+import { clearMain } from "./dom";
 
-  main.textContent = "";
+export function loadHome() {
+  const main = clearMain();
 
   const heading = document.createElement("h2");
   heading.textContent = "Welcome to Jazz's Restaurant";

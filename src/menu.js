@@ -1,7 +1,7 @@
-export function loadMenu() {
-  const main = document.getElementById("main-content");
+import { clearMain } from "./dom";
 
-  main.textContent = "";
+export function loadMenu() {
+  const main = clearMain();
 
   const heading = document.createElement("h2");
   heading.textContent = "Menu";
