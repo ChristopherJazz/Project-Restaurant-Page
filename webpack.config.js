@@ -11,8 +11,18 @@ module.exports = {
     clean: true,
   },
 
-  devServer: {
-    static: "./dist",
-    open: true,
+ devServer: {
+  static: {
+    directory: path.resolve(__dirname, "dist"),
+  },
+  open: true,
+},
+  module: {
+    rules: [
+      {
+        test: /\.css$/,
+        use: ["style-loader", "css-loader"],
+      },
+    ],
   },
 };
