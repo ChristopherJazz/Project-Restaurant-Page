@@ -11,18 +11,24 @@ module.exports = {
     clean: true,
   },
 
- devServer: {
-  static: {
-    directory: path.resolve(__dirname, "dist"),
-  },
-  open: true,
-},
   module: {
     rules: [
       {
         test: /\.css$/,
         use: ["style-loader", "css-loader"],
       },
+
+      {
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: "asset/resource",
+      },
     ],
+  },
+
+  devServer: {
+    static: {
+      directory: path.resolve(__dirname, "dist"),
+    },
+    open: true,
   },
 };
