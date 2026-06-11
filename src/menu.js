@@ -1,5 +1,7 @@
-import { createElement } from "./elements";
 import { clearMain } from "./dom";
+import { createElement } from "./elements";
+import { createMenuCard } from "./menuCard";
+
 
 const menuItems = [
   { name: "Burger", price: 250 },
@@ -11,18 +13,9 @@ const menuItems = [
 export function loadMenu() {
   const main = clearMain();
 
-  const heading = createElement("h2", "Menu");
-  main.appendChild(heading);
+  main.appendChild(createElement("h2", "Menu"));
 
   menuItems.forEach((item) => {
-    const card = createElement("div");
-    card.classList.add("menu-card");
-
-    const name = createElement("h3", item.name);
-    const price = createElement("p", `₱${item.price}`);
-
-    card.append(name, price);
-
-    main.appendChild(card);
+    main.appendChild(createMenuCard(item));
   });
 }

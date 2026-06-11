@@ -7,16 +7,34 @@ import { loadContact } from "./contact";
 
 initializePage();
 
+function setActiveButton(activeButton) {
+  const buttons = document.querySelectorAll("nav button");
+
+  buttons.forEach((button) => {
+    button.classList.remove("active");
+  });
+
+  activeButton.classList.add("active");
+}
+
+const homeBtn = document.getElementById("home-btn");
+const menuBtn = document.getElementById("menu-btn");
+const contactBtn = document.getElementById("contact-btn");
+
 loadHome();
+setActiveButton(homeBtn);
 
-document
-  .getElementById("home-btn")
-  .addEventListener("click", loadHome);
+homeBtn.addEventListener("click", () => {
+  loadHome();
+  setActiveButton(homeBtn);
+});
 
-document
-  .getElementById("menu-btn")
-  .addEventListener("click", loadMenu);
+menuBtn.addEventListener("click", () => {
+  loadMenu();
+  setActiveButton(menuBtn);
+});
 
-document
-  .getElementById("contact-btn")
-  .addEventListener("click", loadContact);
+contactBtn.addEventListener("click", () => {
+  loadContact();
+  setActiveButton(contactBtn);
+});
