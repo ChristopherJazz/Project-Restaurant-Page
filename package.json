@@ -20,6 +20,7 @@
   "homepage": "https://github.com/ChristopherJazz/Project-Restaurant-Page#readme",
   "devDependencies": {
     "css-loader": "^7.1.4",
+    "html-webpack-plugin": "^5.6.7",
     "style-loader": "^4.0.0",
     "webpack": "^5.107.2",
     "webpack-cli": "^7.0.3",

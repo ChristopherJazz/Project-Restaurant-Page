@@ -36,13 +36,19 @@ img {
   display: block;
   margin: 1rem auto;
 }
+
 .menu-card {
   border: 1px solid #ddd;
+  border-radius: 10px;
   padding: 1rem;
-  margin: 1rem 0;
-  border-radius: 8px;
+  margin-bottom: 1rem;
 }
 
+.menu-card img {
+  width: 100%;
+  max-width: 300px;
+  display: block;
+}
 .active {
   font-weight: bold;
 }
